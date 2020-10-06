@@ -1,0 +1,78 @@
+2020-10-05 21:29:10.704  INFO 356 --- [restartedMain] c.l.s.Spring20201005Application          : Starting Spring20201005Application on DESKTOP-UKPRUO2 with PID 356 (D:\java 20\MAVEN projects\spring20201005\target\classes started by Shinelon in D:\java 20\MAVEN projects\spring20201005)
+2020-10-05 21:29:10.704  INFO 356 --- [restartedMain] c.l.s.Spring20201005Application          : No active profile set, falling back to default profiles: default
+2020-10-05 21:29:11.048  INFO 356 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8089 (http)
+2020-10-05 21:29:11.049  INFO 356 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-05 21:29:11.049  INFO 356 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-05 21:29:11.072  INFO 356 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-05 21:29:11.072  INFO 356 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 365 ms
+2020-10-05 21:29:11.187  INFO 356 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-05 21:29:11.367  INFO 356 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-10-05 21:29:11.373  INFO 356 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-05 21:29:11.383  INFO 356 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2020-10-05 21:29:11.400  INFO 356 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8089 (http) with context path ''
+2020-10-05 21:29:11.410  INFO 356 --- [restartedMain] c.l.s.Spring20201005Application          : Started Spring20201005Application in 0.771 seconds (JVM running for 424.622)
+2020-10-05 21:29:11.418  INFO 356 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   LogFileWebEndpointAutoConfiguration#logFileWebEndpoint matched:
+      - Log File found logging.file.name myLog.log (LogFileWebEndpointAutoConfiguration.LogFileCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.logging.LogFileWebEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ShutdownEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint found property management.endpoint.shutdown.enabled with value true; @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   ShutdownEndpointAutoConfiguration#shutdownEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.context.ShutdownEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2020-10-05 21:29:13.759  INFO 356 --- [Thread-22] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2020-10-05 21:29:13.759  INFO 356 --- [Thread-22] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-05 21:29:13.903  INFO 356 --- [restartedMain] c.l.s.Spring20201005Application          : Starting Spring20201005Application on DESKTOP-UKPRUO2 with PID 356 (D:\java 20\MAVEN projects\spring20201005\target\classes started by Shinelon in D:\java 20\MAVEN projects\spring20201005)
+2020-10-05 21:29:13.904  INFO 356 --- [restartedMain] c.l.s.Spring20201005Application          : No active profile set, falling back to default profiles: default
+2020-10-05 21:29:14.170  INFO 356 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8089 (http)
+2020-10-05 21:29:14.170  INFO 356 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-05 21:29:14.170  INFO 356 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-05 21:29:14.200  INFO 356 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-05 21:29:14.200  INFO 356 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 294 ms
+2020-10-05 21:29:14.328  INFO 356 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-05 21:29:14.439  INFO 356 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-10-05 21:29:14.446  INFO 356 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-05 21:29:14.449  INFO 356 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2020-10-05 21:29:14.467  INFO 356 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8089 (http) with context path ''
+2020-10-05 21:29:14.475  INFO 356 --- [restartedMain] c.l.s.Spring20201005Application          : Started Spring20201005Application in 0.593 seconds (JVM running for 427.687)
+2020-10-05 21:29:14.477  INFO 356 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-10-05 21:29:50.286  INFO 5780 --- [main] c.l.s.Spring20201005ApplicationTests     : Starting Spring20201005ApplicationTests on DESKTOP-UKPRUO2 with PID 5780 (started by Shinelon in D:\java 20\MAVEN projects\spring20201005)
+2020-10-05 21:29:50.287  INFO 5780 --- [main] c.l.s.Spring20201005ApplicationTests     : No active profile set, falling back to default profiles: default
+2020-10-05 21:29:52.377  INFO 5780 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-05 21:29:53.233  INFO 5780 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-10-05 21:29:53.258  INFO 5780 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2020-10-05 21:29:53.323  INFO 5780 --- [main] c.l.s.Spring20201005ApplicationTests     : Started Spring20201005ApplicationTests in 3.431 seconds (JVM running for 4.569)
+2020-10-05 21:29:54.007  INFO 5780 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2020-10-05 21:29:54.008  INFO 5780 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

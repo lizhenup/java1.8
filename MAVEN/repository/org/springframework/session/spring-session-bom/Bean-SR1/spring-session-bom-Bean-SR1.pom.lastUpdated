@@ -1,0 +1,7 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Fri Jun 05 10:58:15 CST 2020
+http\://repo.spring.io/milestone/.error=Could not transfer artifact org.springframework.session\:spring-session-bom\:pom\:Bean-SR1 from/to spring-milestones (http\://repo.spring.io/milestone)\: Access denied to\: http\://repo.spring.io/milestone/org/springframework/session/spring-session-bom/Bean-SR1/spring-session-bom-Bean-SR1.pom , ReasonPhrase\:Forbidden.
+https\://repo.maven.apache.org/maven2/.lastUpdated=1591325895000
+http\://repo.spring.io/snapshot/.error=Could not transfer artifact org.springframework.session\:spring-session-bom\:pom\:Bean-SR1 from/to spring-snapshots (http\://repo.spring.io/snapshot)\: Access denied to\: http\://repo.spring.io/snapshot/org/springframework/session/spring-session-bom/Bean-SR1/spring-session-bom-Bean-SR1.pom , ReasonPhrase\:Forbidden.
+@default-spring-snapshots-http\://repo.spring.io/snapshot/.lastUpdated=1591325893560
+@default-spring-milestones-http\://repo.spring.io/milestone/.lastUpdated=1591325893971

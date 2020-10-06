@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Fri Jun 12 18:27:13 CST 2020
+byte-buddy-agent-1.10.6.jar>central=
+byte-buddy-agent-1.10.6.pom>central=
+byte-buddy-agent-1.10.6-javadoc.jar>aliyun-repo=

@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Fri Jun 12 18:26:15 CST 2020
+snakeyaml-1.25.jar>central=
+snakeyaml-1.25.pom>central=
+snakeyaml-1.25-javadoc.jar>aliyun-repo=

@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Fri Jun 12 18:27:46 CST 2020
+jakarta.xml.bind-api-2.3.2.jar>central=
+jakarta.xml.bind-api-2.3.2-javadoc.jar>aliyun-repo=
+jakarta.xml.bind-api-2.3.2.pom>central=
