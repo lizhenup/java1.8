@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="user" class="com.lz.pojo.User">
+        <!--无参构造创建对象-->
+        <!--<property name="name" value="Spring"/>-->
+        <!--有参构造创建对象-->
+        <!-- 方式一 ：下标赋值-->
+        <!--<constructor-arg index="0" value="有参"/>-->
+        <!-- 方式二 不推荐  通过类型创建-->
+        <!--<constructor-arg type="java.lang.String" value="方式二"/>-->
+        <!-- 方式三  直接通过参数名创建对象-->
+        <constructor-arg name="name" value="3" />
+    </bean>
+    <bean id="userT" class="com.lz.pojo.UserT" name="u1,u2">
+    <!--无参构造创建对象-->
+    <property name="name" value="Spring"/>
+    </bean>
+    <!--别名-->
+    <alias name="user" alias="1"/>
+
+</beans>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax初体验</title>
+    <script>
+        function go() {
+            var url = document.getElementById("url").value;
+            document.getElementById("iframe1").src=url;
+        }
+    </script>
+</head>
+<body>
+
+<div>
+    <p>请输入地址：</p>
+    <p>
+        <input type="text" id="url" value="https://www.baidu.com/link?url=f7OgCXzKfat3GKJDu0gw4SfYrtaa0ca3q5ujIl3uXLfK-nAUChkTq4m6AWjIcWkkuwKZGjMukbdfLPoCoyhxQs4NE7BSfWYThObVQsbGJAC&wd=&eqid=f21183d50021d0a1000000035f797837">
+        <input type="submit" value="提交" onclick="go()">
+    </p>
+
+</div>
+<div>
+    <iframe id="iframe1" style="width: 100%;height: 500px"></iframe>
+</div>
+
+
+</body>
+</html>

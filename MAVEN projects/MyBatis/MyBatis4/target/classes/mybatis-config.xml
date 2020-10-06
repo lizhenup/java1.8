@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!--configuration 核心配置文件-->
+
+<!--引入外部配置文件-->
+<configuration>
+    <properties resource="db.properties">
+        <property name="username" value="root"/>
+        <property name="password" value=""/>
+    </properties>
+    <settings>
+        <!--是否开启驼峰命名自动映射，
+        即从经典数据库列名 A_COLUMN 映射到经典
+         Java 属性名 aColumn。-->
+        <setting name="logImpl" value="LOG4J"/>
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+    <!--environments 选择默认配置文件-->
+    <environments default="test">
+        <environment id="test">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
+
+    </environments>
+    <!--Mapper.xml需要在MyBatis核心配置文件中注册-->
+    <mappers>
+        <!--注册绑定mapper-->
+     <!-- <mapper resource="com/lz/dao/UserMapper.xml"/>-->
+        <!--使用class文件注册绑定-->
+        <!--接口和mapper必须同名同包-->
+        <!--<mapper class="com.lz.dao.UserMapper"/>-->
+        <!--使用扫描包注册绑定-->
+        <!--接口和mapper必须同名同包-->
+        <package name="com.lz.Dao"/>
+    </mappers>
+
+</configuration>

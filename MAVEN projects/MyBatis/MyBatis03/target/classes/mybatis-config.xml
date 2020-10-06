@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!--configuration 核心配置文件-->
+
+<!--引入外部配置文件-->
+<configuration>
+    <properties resource="db.properties">
+        <property name="username" value="root"/>
+        <property name="password" value=""/>
+    </properties>
+    <!--标准的日志工厂-->
+    <settings>
+        <!--<setting name="logImpl" value="STDOUT_LOGGING"/>-->
+        <setting name="logImpl" value="LOG4J"/>
+    </settings>
+    <typeAliases>
+        <!--<typeAlias alias="user"type="com.lz.pojo.User" />-->
+        <package name="com.lz.pojo"/>
+    </typeAliases>
+    <!--environments 选择默认配置文件-->
+    <environments default="test">
+        <environment id="development">
+            <!--在 MyBatis 中有两种类型的事务管理器（也就是 type="[JDBC|MANAGED]"）-->
+        <transactionManager type="JDBC"/>
+        <dataSource type="POOLED">
+            <property name="driver" value="com.mysql.jdbc.Driver"/>
+            <property name="url" value="jdbc:mysql://localhost:3306/stu0807?useSSL=true&amp;useUnicode=true&amp;characterEncoding=UTF-8"/>
+            <property name="username" value="root"/>
+            <property name="password" value=""/>
+        </dataSource>
+    </environment>
+        <environment id="test">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
+
+    </environments>
+    <!--Mapper.xml需要在MyBatis核心配置文件中注册-->
+    <mappers>
+        <!--注册绑定mapper-->
+     <!-- <mapper resource="com/lz/dao/UserMapper.xml"/>-->
+        <!--使用class文件注册绑定-->
+        <!--接口和mapper必须同名同包-->
+        <!--<mapper class="com.lz.dao.UserMapper"/>-->
+        <!--使用扫描包注册绑定-->
+        <!--接口和mapper必须同名同包-->
+        <package name="com.lz.dao"/>
+    </mappers>
+
+</configuration>

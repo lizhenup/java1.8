@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lz.mapper.UserMapper">
+    <select id="selectUser" resultType="user">
+        select * from cash.account;
+    </select>
+    <insert id="addUser" parameterType="user">
+        insert into cash.account (username,password) values (#{username},#{password});
+    </insert>
+    <delete id="deleteUser" parameterType="int">
+        deletes from cash.account where id = #{id};
+    </delete>
+    <update id="upDateUser" parameterType="int">
+        update cash.account set username = #{username}, password = #{password} where id = #{id};
+    </update>
+
+</mapper>

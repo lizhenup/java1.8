@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace=绑定一个对应的Dao/Mapper接口-->
+<mapper namespace="com.lz.dao.UserMapper">
+    <!--查询语句-->
+    <!--id 对应的namespace方法名-->
+    <select id="getUserList" resultType="User">
+        select * from stu0807.student;
+    </select>
+    <select id="getUserById" resultType="user" parameterType="int">
+        select * from stu0807.student where id = #{id};
+    </select>
+    <!--<select id="getUserById2" resultType="com.lz.pojo.User" parameterType="map">
+        select * from stu0807.student where id = #{id};
+    </select>-->
+    <insert id="addUser"  parameterType="user">
+        insert into stu0807.student(name, _class) values (#{name},#{_class});
+    </insert>
+    <!--<insert id="addUser2"  parameterType="map">
+        insert into stu0807.student(name, _class) values (#{name},#{_class});
+    </insert>-->
+    <update id="upDateUser" parameterType="user">
+        update stu0807.student set name = #{name}, _class = #{_class} where id = #{id};
+    </update>
+    <delete id="deleteUser" parameterType="int">
+        delete from stu0807.student where id = #{id};
+    </delete>
+    <!--<select id="getUserLike" resultType="com.lz.pojo.User">
+        select *from stu0807.student where name like #{name};
+    </select>-->
+    
+</mapper>
